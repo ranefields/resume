@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "watch": "onchange \"styles.scss\" -- npm run sass",
+    "sass": "sass styles.scss styles.css"
+  },
+  "devDependencies": {
+    "onchange": "^4.0.0"
+  }
+}
