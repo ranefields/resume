@@ -1,6 +1,7 @@
-@media only screen {
+@media screen {
   body {
     visibility: hidden;
+    overflow: hidden;
     &:before {
       visibility: visible;
       content: "Print this page to see stuff";
@@ -8,6 +9,6 @@
   }  
 }
 
-@media only print {
-  
+@media print {
+
 }

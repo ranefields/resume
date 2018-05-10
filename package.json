@@ -1,4 +1,6 @@
 {
+  "name": "resume",
+  "version": "1.0.0",
   "scripts": {
     "watch": "onchange \"styles.scss\" -- npm run sass",
     "sass": "sass styles.scss styles.css"
