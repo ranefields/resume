@@ -38,7 +38,6 @@
     display: flex;
     justify-content: space-between;
     margin: 30px;
-    font-family: Arial;
 
     .column {
       &:nth-child(1) {
@@ -52,15 +51,15 @@
   }
 
   h1, h2 {
-    font-family: Vera-bold;
+    font-family: Vera-bold, sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     color: $color-dark-text;
   }
   
   p, li {
-    font-family: Lato;
-    font-size: 16px;
+    font-family: Lato, sans-serif;
+    font-size: 15px;
     color: $color-light-text;
   }
 
@@ -75,7 +74,7 @@
 
   .jumbotron {
     h1 {
-      font-size: 60px;
+      font-size: 55px;
       line-height: 0.85em;
     }
     h2 {
@@ -90,8 +89,8 @@
       margin-bottom: 5px;
     }
     h2 {
-      font-family: Vera;
-      font-size: 19px;
+      font-family: Vera, sans-serif;
+      font-size: 20px;
       font-weight: normal;
       margin-bottom: 5px;
     }
@@ -103,6 +102,9 @@
 
   #profile {
     margin-bottom: 20px;
+    p {
+      font-size: 16px;
+    }
   }
 
   #experience {
@@ -115,9 +117,12 @@
         margin-bottom: 5px;
         p {
           display: inline-block;
-          font-size: 19px;
+          font-size: 18px;
           font-style: italic;
           color: $color-dark-text;
+        }
+        .date {
+          font-size: 16px;
         }
       }
       li {
