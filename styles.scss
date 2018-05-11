@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Muli:600,900');
+
 @media screen {
   .page-wrapper {
     visibility: hidden;
@@ -10,23 +12,22 @@
 }
 
 @media print {
-  $color-dark-text: black;
-  $color-light-text: #696969;
-  $color-link: #b92520;
+  $color_dark-text: black;
+  $color_light-text: #696969;
+  $color_link: #b92520;
 
-  @font-face {
-    font-family: Lato;
-    src: url('fonts/Lato-Medium.ttf');
+  @mixin font_header() {
+    font-family: 'Muli', serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.05em;
   }
-
-  @font-face {
-    font-family: Vera;
-    src: url('fonts/Vera.ttf');
+  @mixin font_header-light() {
+    font-weight: 600;
+    letter-spacing: unset;
   }
-
-  @font-face {
-    font-family: Vera-bold;
-    src: url('fonts/VeraBd.ttf');
+  @mixin font_text() {
+    font-family: 'Lato', serif;
   }
 
   * {
@@ -51,16 +52,14 @@
   }
 
   h1, h2 {
-    font-family: Vera-bold, sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: $color-dark-text;
+    @include font_header();
+    color: $color_dark-text;
   }
   
   p, li {
-    font-family: Lato, sans-serif;
+    @include font_text();
     font-size: 15px;
-    color: $color-light-text;
+    color: $color_light-text;
   }
 
   ul, ol {
@@ -68,7 +67,7 @@
   }
 
   a {
-    color: $color-link;
+    color: $color_link;
     text-decoration: none;
   }
 
@@ -79,7 +78,7 @@
     }
     h2 {
       font-size: 26px;
-      color: $color-light-text;
+      color: $color_light-text;
     }
   }
 
@@ -89,9 +88,8 @@
       margin-bottom: 5px;
     }
     h2 {
-      font-family: Vera, sans-serif;
+      @include font_header-light();
       font-size: 20px;
-      font-weight: normal;
       margin-bottom: 5px;
     }
   }
@@ -119,7 +117,7 @@
           display: inline-block;
           font-size: 18px;
           font-style: italic;
-          color: $color-dark-text;
+          color: $color_dark-text;
         }
         .date {
           font-size: 16px;
