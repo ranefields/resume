@@ -1,5 +1,5 @@
 @media screen {
-  body {
+  .page-wrapper {
     visibility: hidden;
     overflow: hidden;
     &:before {
@@ -34,7 +34,7 @@
     margin: 0px;
   }
 
-  body {
+  .page-wrapper {
     display: flex;
     justify-content: space-between;
     margin: 30px;
