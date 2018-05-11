@@ -8,6 +8,7 @@
 * Open `resume.html` in a browser (Chrome is preferred; Edge breaks the fonts)
 * Print the html page from the browser
 * Change the paper size to 8.5'' x 11'' (letter size) and print to pdf
+* Sometimes Chrome's print preview comes out blank--just change any setting to make it reload
 
 ## GH Pages Demo
 
