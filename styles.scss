@@ -147,8 +147,13 @@
   #projects {
     .section-item {
       margin-bottom: 5px;
+      h2 {
+        margin-bottom: 0px;
+      }
       a {
+        display: inline-block;
         font-style: italic;
+        margin-bottom: 5px;
       }
     }
   }
