@@ -6,6 +6,7 @@
     "sass": "sass styles.scss styles.css"
   },
   "devDependencies": {
-    "onchange": "^4.0.0"
+    "onchange": "^4.0.0",
+    "sass": "^1.7.1"
   }
 }
