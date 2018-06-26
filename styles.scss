@@ -2,6 +2,7 @@
 
 $color_dark-text: black;
 $color_light-text: #696969;
+$color_extra-light-text: #fff; // Print to pdf darkens color for some reason??
 $color_link: #b92520;
 
 @mixin font_header() {
@@ -50,7 +51,7 @@ $color_link: #b92520;
   }
 }
 
-h1, h2 {
+h1, h2, h3 {
   @include font_header();
   color: $color_dark-text;
 }
@@ -78,6 +79,10 @@ a {
   h2 {
     font-size: 26px;
     color: $color_light-text;
+  }
+  h3 {
+    font-size: 19px;
+    color: $color_extra-light-text;
   }
 }
 
